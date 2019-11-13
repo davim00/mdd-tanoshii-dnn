@@ -1,0 +1,58 @@
+// Layout
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+.site-wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  min-height: 100%;
+  background-color: theme-color("medium-bg");
+}
+
+.top-border,
+.main,
+.site-footer {
+  flex-shrink: 0
+}
+
+.top-border {
+  background-color: theme-color("primary");
+  background-image: url(images/topborder.gif);
+  background-position: top;
+  background-repeat: repeat-x;
+  height: 29px;
+}
+
+.info-bar,
+.content-area {
+  background: linear-gradient(to right, theme-color("light-bg") 0%, theme-color("highlight-bg") 100%);
+}
+
+.info-bar {
+  border-bottom: 1px solid #C7C7AF;
+}
+
+.content-area {
+  border-top: 1px solid theme-color("highlight-bg");
+}
+
+@media (min-width: 768px) {
+  .info-bar {
+    border-right: 1px solid #C7C7AF;
+  }
+
+  .content-area {
+    border-left: 1px solid theme-color("highlight-bg");
+  }
+}
+
+.site-footer {
+  background-color: theme-color("primary");
+  color: $white;
+  font-size: $font-size-sm;
+}
