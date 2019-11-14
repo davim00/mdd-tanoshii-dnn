@@ -88,12 +88,20 @@ html {
 .top-nav {
 
   .nav-link {
-    font-size: $font-size-base * 1.5;
+    font-size: $font-size-base;
     font-family: $font-family-serif;
     font-weight: 700;
 
     &:hover {
       text-decoration: underline;
+    }
+
+    @media (min-width: 540px) {
+      font-size: $font-size-base * 1.25;
+    }
+
+    @media (min-width: 768px) {
+      font-size: $font-size-base * 1.5;
     }
   }
 }
@@ -144,4 +152,59 @@ html {
 .info-block {
   background-color: theme-color("secondary");
   padding: $grid-gutter-width * .5;
+}
+
+
+
+// Page Content
+
+.page-title-box {
+  background-color: theme-color("secondary");
+  padding: $spacer * .625;
+}
+
+.menu-header {
+
+  h2 {
+    font-size: $h1-font-size;
+  }
+}
+
+.menu-description {
+  font-style: italic;
+  text-align: center;
+}
+
+.menu-table {
+
+  tbody td {
+    padding-left: 0;
+    padding-right: 0;
+    border-bottom: 1px dotted $gray-500;
+  }
+
+  .menu-price {
+    text-align: right;
+    font-weight: 700;
+    font-size: $font-size-base;
+  }
+
+  .price-head {
+    font-size: $font-size-sm;
+    font-variant: small-caps;
+    letter-spacing: 1px;
+    text-align: right;
+  }
+
+  .hot-item:before {
+    content: '\02660';
+    font-size: $font-size-base;
+    color: theme-color("danger");
+  }
+}
+
+.hot-item:before {
+  content: '\02660\000A0';
+  font-size: $font-size-base;
+  color: theme-color("danger");
 }
