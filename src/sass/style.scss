@@ -1,5 +1,5 @@
 @import "bootstrap/functions";
-@import "bootstrap/variables";
+@import "variables";
 @import "bootstrap/mixins";
 @import "bootstrap/root";
 @import "reboot";
@@ -24,6 +24,4 @@
 @import "bootstrap/carousel";
 @import "bootstrap/utilities";
 @import "bootstrap/print";
-
-@import 'variables';
 @import 'theme';
