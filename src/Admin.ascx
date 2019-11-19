@@ -1,14 +1,12 @@
-<!-- #include file="includes/Header.ascx" -->
-<!-- #include file="includes/Navigation.ascx" -->
+<!-- #include file="includes/Header.html" -->
+<!-- #include file="includes/Navigation.html" -->
 
             <!-- Page Content -->
-            <div>
-              Content Pane
-            </div>
+            <div runat="server" id="ContentPane" class="ContentPane"/>
 
           </div>
         </div>
       </div>
     </div>
 
-<!-- #include file="includes/Footer.ascx" -->
+<!-- #include virtual="includes/Footer.html" -->

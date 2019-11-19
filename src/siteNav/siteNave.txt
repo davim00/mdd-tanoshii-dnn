@@ -1,0 +1,13 @@
+<ul class="nav nav-fill">
+  [*>NODE]
+</ul>
+
+[>NODE]
+  <li class="nav-item[?SELECTED] active[/?]">
+    [?ENABLED]
+      <a href="[=URL]" class="nav-link">[=TEXT]</a>
+    [?ELSE]
+      <a href="#" class="nav-link">[=TEXT]</a>
+    [/?]
+  </li>
+[/>]

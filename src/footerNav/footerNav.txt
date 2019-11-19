@@ -1,0 +1,13 @@
+<ul class="d-flex justify-content-center">
+  [*>NODE]
+</ul>
+
+[>NODE]
+  <li class="ml-2 mr-2[?SELECTED] active[/?]">
+    [?ENABLED]
+      <a href="[=URL]">[=TEXT]</a>
+    [?ELSE]
+      <a href="#">[=TEXT]</a>
+    [/?]
+  </li>
+[/>]
